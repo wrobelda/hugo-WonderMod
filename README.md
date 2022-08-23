@@ -35,4 +35,4 @@ markup:
 ```
 
 See [Hugo documentation](https://gohugo.io/getting-started/configuration-markup#highlight) for more options.
-*Note: for some reason, the `guessSyntax` doesn't actually works but is required. Please make your code fences explicit for the time being.*
+*Note: for some reason, the `guessSyntax` doesn't actually work but is required. Please make your code fences explicit for the time being.*
