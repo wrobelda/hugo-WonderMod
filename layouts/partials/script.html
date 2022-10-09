@@ -16,7 +16,7 @@
 {{- /* PaperMod.js */}}
 {{- $scrollToTop := (not site.Params.disableScrollToTop | default .Params.disableScrollToTop ) }}
 {{- $themeToggle := (not site.Params.disableThemeToggle | default .Params.disableThemeToggle ) }}
-{{- $showCodeCopyButtons := ((and (.IsPage) (ne .Layout "archives") (ne .Layout "search") (site.Params.ShowCodeCopyButtons)) | default .Params.ShowCodeCopyButtons ) }}
+{{- $showCodeCopyButtons := (site.Params.ShowCodeCopyButtons | default .Params.ShowCodeCopyButtons ) }}
 {{- $papermod := resources.Get "js/papermod.js" | js.Build (dict "params" (dict "scrollToTop" $scrollToTop "themeToggle" $themeToggle "showCodeCopyButtons" $showCodeCopyButtons)) | resources.Minify }}
 {{- if not site.Params.assets.disableFingerprinting }}
 {{- $papermod_js := (slice $papermod) | resources.Concat "assets/js/papermod.js" | fingerprint }}
