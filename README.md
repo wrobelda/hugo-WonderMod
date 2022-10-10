@@ -9,6 +9,8 @@ WonderMod is a fork of an original theme for [Hugo](https://gohugo.io/) called [
 
 When implementing new features, I try to do as much as I can with pure CSS code instead of adding new JavaScript code. I'd like to keep the JavaScript part minimal and that's why WonderMod should be totally usable when disabling JavaScript. WonderMod is also designed with strong CSP headers in mind: no inline JavaScript or style, no calls to third-parties.
 
+**This fork is regularly synced with upstream changes from [PaperMod](https://github.com/adityatelange/hugo-PaperMod).** A merging workflow was chosen since rebasing WonderMod's changes every time could be less efficient. As such, commit history is a bit messy, but upstream changes will be merged on a best effort basis.
+
 ### Main changes
 Current "main" changes are as follows:
 - Remove inline JavaScript ([2528906](https://github.com/Wonderfall/hugo-WonderMod/commit/2528906a38a1ca8a50b3e3a74ffcf9a01a0483a7))
