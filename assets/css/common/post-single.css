@@ -69,9 +69,9 @@
     font-size: 12px;
 }
 
-.post-content a,
+.post-content p a,
 .toc a:hover {
-    box-shadow: 0 1px 0;
+    border-bottom: 1px solid var(--primary);
 }
 
 .post-content a code {
