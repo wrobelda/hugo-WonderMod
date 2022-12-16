@@ -69,7 +69,7 @@
     font-size: 12px;
 }
 
-.post-content p a,
+.post-content a,
 .toc a:hover {
     border-bottom: 1px solid var(--primary);
 }
@@ -362,6 +362,7 @@ h3:hover .anchor,
 h4:hover .anchor,
 h5:hover .anchor,
 h6:hover .anchor {
+    border-bottom: none;
     display: inline-flex;
     color: var(--secondary);
     margin-inline-start: 8px;
