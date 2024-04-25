@@ -61,7 +61,7 @@ body:not(.dark) #sun {
     margin-inline-start: var(--gap);
 }
 
-#hamburger-input {
+/* #hamburger-input {
     display: none;
 }
 
@@ -127,7 +127,7 @@ body:not(.dark) #sun {
     #menu li + li {
         margin-inline-start: 0;
     }
-}
+} */
 
 .overlay {
     position: fixed;
