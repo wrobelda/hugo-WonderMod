@@ -343,6 +343,10 @@
     background: var(--tertiary);
 }
 
+.paginav a:hover {
+    background: var(--border);
+}
+
 .share-buttons {
     padding: 10px;
     display: flex;
@@ -378,8 +382,6 @@ h6:hover .anchor {
     display: flex;
     line-height: 30px;
     border-radius: var(--radius);
-    background: none;
-    border: none;
 }
 
 .paginav a {
