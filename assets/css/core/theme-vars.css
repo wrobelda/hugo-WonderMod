@@ -13,6 +13,7 @@
     --tertiary: #c3c5d0;
     --content: rgb(31, 31, 31);
     --code-bg: #e2e4f2;
+    --code-side-margin: auto;
     --border: rgb(238, 238, 238);
 }
 

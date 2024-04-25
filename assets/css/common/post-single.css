@@ -152,7 +152,7 @@
 }
 
 .post-content .highlight:not(table) {
-    margin: 10px auto;
+    margin: 10px var(--code-side-margin);
     border-radius: var(--radius);
     direction: ltr;
 }
