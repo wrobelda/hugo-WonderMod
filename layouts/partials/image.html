@@ -1,5 +1,5 @@
 <!-- prettier-ignore -->
-{{ if .caption }}
+{{- if or (or .title .caption) .attr -}}
   <figure>
 {{ end }}
 
@@ -90,7 +90,19 @@
 
 
 <!-- prettier-ignore -->
-{{ if .caption }}
-    <figcaption>{{ .page.RenderString .caption }}</figcaption>
-  </figure>
+{{- if or (or .title .caption) .attr -}}
+  <figcaption>
+    {{ with .title -}}
+        {{ . }}
+    {{- end -}}
+    {{- if or .caption .attr -}}<p>
+        {{- .caption | markdownify -}}
+        {{- with .attrlink }}
+            <a href="{{ . }}">
+        {{- end -}}
+        {{- .attr | markdownify -}}
+        {{- if .attrlink }}</a>{{ end }}</p>
+    {{- end }}
+  </figcaption>
+</figure>
 {{ end }}
